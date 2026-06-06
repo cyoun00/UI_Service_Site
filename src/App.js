@@ -1,25 +1,38 @@
 import React from 'react';
-import { Navbar, Nav, Card } from 'react-bootstrap';
-import './App.css';
+import {BrowserRouter, Link, Routes, Route} from 'react-router-dom';
+import { Navbar, Nav, Card,Container } from 'react-bootstrap';
+import "./style.css";
+import logo from "./assets/logo.png";
+import Home from "./pages/Home.js";
+import About from "./pages/About.js";
+import Lessons from "./pages/Lessons.js";
+import ContactUs from "./pages/ContactUs.js";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  return(
+    <BrowserRouter>
+    <div className = "App">
+    <Navbar expand="lg" fixed="top" id="navbar" className="navbar">
+      <Container>
+        <Navbar.Brand as={Link} to="/" ><img src={logo} alt="purple coloured bubble"></img></Navbar.Brand>
+        <Nav className="me-auto"> 
+          <Nav.Link as={Link} to="/" >Home</Nav.Link>
+          <Nav.Link as={Link} to="/about" >About</Nav.Link>
+          <Nav.Link as={Link} to="/lessons" >How I Work</Nav.Link>
+          <Nav.Link as={Link} to="/contactus" >Projects</Nav.Link>
+        </Nav>
+        </Container>
+      </Navbar>
+    <div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/lessons" element={<Lessons />} />
+      <Route path="/contactus" element={<ContactUs />}/>
+    </Routes>
     </div>
+    </div>
+    </BrowserRouter>
   );
 }
 
