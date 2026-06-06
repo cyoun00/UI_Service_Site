@@ -1,4 +1,5 @@
-import logo from './logo.svg';
+import React from 'react';
+import { Navbar, Nav, Card } from 'react-bootstrap';
 import './App.css';
 
 function App() {
