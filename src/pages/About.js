@@ -17,6 +17,7 @@ export default function About(){
                 <br /><br />We also offer classes to help swimmers at a high level prepare for their Lifeguard Certification course.
 
                 <br /><br />Join in the fun today and register for a class!  </p>
+            <p className="designedby">Site Designed by Christina Y</p>
         </div>
     );
 }
