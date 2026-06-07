@@ -5,12 +5,43 @@ body {
   scroll-behavior: smooth;
 }
 
+.card{
+    position: relative;
+    display: flex;
+    width: 72vw;
+    height: 10vh;
+    background:white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-text{
+    position: relative;
+    display: grid;
+    margin-left: 5vw;
+    justify-content:flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-family: 'Montserrat';
+    font-size: larger;
+}
+
 .button{
     border-color: none;
     border: none;
     background-color: none;
     background: none;
     cursor: pointer;
+}
+
+.screen-btn{
+    font-family: 'Montserrat';
+    font-size: x-large;
+    color: white;
+    z-index: 3;
 }
 
 .designedby{
@@ -36,6 +67,7 @@ body {
     top: 0;
 }
 
+
 .home-button-section{
     position: absolute;
     top: 60vh;
@@ -45,9 +77,13 @@ body {
 
 .screen-button-section{
     position: relative;
-    top: 2vh;
-    margin-left: 15vh;
-    margin-right: 15vh;
+    margin-top: 5vh;
+    width: 614px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
 }
 
 .lessons-button-section{
@@ -57,6 +93,26 @@ body {
     align-items: center;
     margin-top: 5vh;
     gap: 5vh;
+}
+
+.screen-foreground-section{
+    position: relative;
+    display: grid;
+    justify-content: space-around;
+    align-content: space-between;
+
+    height: 80vh;
+    margin-top: 5vh;
+    margin-left: 5vh;
+    margin-right: 5vh;
+    z-index: 4;
+}
+
+.screen-background-section{
+    position: relative;
+    top: 2vh;
+    margin-left: 15vh;
+    margin-right: 15vh;
 }
 
 .background-element {

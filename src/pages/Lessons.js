@@ -10,7 +10,7 @@ export default function Lessons(){
 
     return(
         <div>
-            {screen === "menuScreen" && (
+            {screen === "menu" && (
                 <div>
                     <section className='lessons-button-section'>
                         <Button variant="" className='button' onClick={() => setScreen("tots")}><img src={totsButton} alt="tots button"></img></Button>
@@ -19,8 +19,8 @@ export default function Lessons(){
                     </section>
                 </div>
             )}
-            {screen !== "menuScreen" && (
-                <ScreenComponent setScreen={setScreen} />
+            {screen !== "menu" && (
+                <ScreenComponent screen={screen} />
             )}
 
         </div>
