@@ -1,9 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-body{
-    background-color: white;
+
+body {
+  scroll-behavior: smooth;
 }
-.title{
+
+button{
+    border-color: none;
+    background-color: none;
+    cursor: pointer;
+}
+
+.about{
+    font-family: "Montserrat";
+    text-align: right;
+    font-size: 3vh;
+    margin-left: 50vw;
+}
+
+.h2{
     font-family: 'Rubik Mono One';
+    color: #0077BE;
+    text-align: right;
+    font-size: 7vh;
+    top: 0;
+}
+
+.home-button-section{
+    position: absolute;
+    top: 60vh;
+    left: 90vh;
+    z-index: 3;
+}
+
+.background-element {
+  position: absolute;
+  width: 100%;
+  top: 25vh;
+  z-index: 1;
+}
+
+.title{
+    position: absolute;
+    font-family: 'Rubik Mono One';
+    color: #0077BE;
+    top: 40vh;
     font-size: 20vh;
+    z-index: 2;
+}
+
+.navbar{
+    background-color: #0077BE;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand{
+    padding-left: 1rem;
+}
+
+.nav-link {
+    font-family: 'Rubik Mono One';
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.nav-pills .nav-link.active {
+    background-color: white;
+    color: #0077BE;
+    border-radius: 10px;
 }
