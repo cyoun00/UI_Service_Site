@@ -5,6 +5,26 @@ body {
   scroll-behavior: smooth;
 }
 
+.form-group{
+    position: relative;
+    display: flex;
+    padding-top: 2vh;
+    justify-content: space-between;
+    margin-right: 75vw;
+}
+
+.payForm{
+    position: relative;
+    display: flex;
+    padding-top: 5vh;
+    justify-content: space-around;
+    margin-right: 80vw;
+}
+
+.form{
+    font-family: 'Montserrat';
+}
+
 .card{
     position: relative;
     display: flex;
@@ -29,6 +49,13 @@ body {
     font-size: larger;
 }
 
+.confirm-btn{
+    font-family: 'Montserrat';
+    background:white;
+    color: black;
+    border: 1px solid black;
+}
+
 .button{
     border-color: none;
     border: none;
@@ -47,8 +74,9 @@ body {
 .designedby{
     position: absolute;
     font-family: "Montserrat";
+    font-size: large;
     top: 100vh;
-    left: 10vw;
+    left: 7vw;
     z-index: 3;
 }
 
@@ -67,6 +95,33 @@ body {
     top: 0;
 }
 
+.confirm-title{
+    font-family: 'Rubik Mono One';
+    color: #0077BE;
+    font-size: 7vh;
+    top: 0;
+    justify-self: center;
+    align-self: center;
+}
+
+.confirm-p{
+    font-family: "Montserrat";
+    font-size: 3vh;
+    justify-self: center;
+    align-self: center;
+}
+
+.info-title{
+    font-family: 'Rubik Mono One';
+    color: #0077BE;
+    font-size: 7vh;
+    top: 0;
+}
+
+.info-p{
+    font-family: "Montserrat";
+    font-size: 3vh;
+}
 
 .home-button-section{
     position: absolute;

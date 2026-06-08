@@ -19,8 +19,8 @@ export default function Lessons(){
                     </section>
                 </div>
             )}
-            {screen !== "menu" && (
-                <ScreenComponent screen={screen} />
+            {screen !== "menu" && screen !== "registration" && screen !== "information" &&(
+                <ScreenComponent screen={screen}/>
             )}
 
         </div>
