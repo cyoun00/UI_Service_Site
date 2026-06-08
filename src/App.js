@@ -1,6 +1,6 @@
 import React from 'react';
 import {BrowserRouter, NavLink, Routes, Route} from 'react-router-dom';
-import { Navbar, Nav, Card,Container } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 import "./style.css";
 import logo from "./assets/logo.png";
 import Home from "./pages/Home.js";

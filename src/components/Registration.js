@@ -2,18 +2,7 @@ import React, {useState} from 'react';
 import { Button, Form } from 'react-bootstrap';
 
 export default function Registration({ lessonType }){
-    const [validated, setValidated] = useState(false);
     const [confirmed, setConfirmed] = useState(false);
-
-    const handleSubmit = (event) => {
-        const form = event.currentTarget;
-        if (form.checkValidity() === false) {
-        event.preventDefault();
-        event.stopPropagation();
-        }
-
-        setValidated(true);
-    };
 
     const [pnumber, setPNumber] = useState("");
     const [cnumber, setCNumber] = useState("");
